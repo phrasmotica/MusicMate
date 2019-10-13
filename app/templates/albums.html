@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Listen to:</h1>
+    {% for album in albums %}
+    <div><p><b>{{ album.name }}</b> by <b>{{ album.artist }}</b></p></div>
+    {% endfor %}
+{% endblock %}
